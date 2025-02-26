@@ -18,8 +18,8 @@ test('create an answer', async () => {
     )
 
     const answer = await answerQuestion.execute({
-        instructorId: new UniqueEntityId("1"),
-        questionId: new UniqueEntityId("2"),
+        instructorId: '1',
+        questionId: '2',
         content: "Nova resposta",
     })
 
