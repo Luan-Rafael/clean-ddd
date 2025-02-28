@@ -1,9 +1,8 @@
 import { AnswerQuestionUseCase } from './answer-question'
-import { Answer } from '../entities/answer'
 
 test('create an answer', async () => {
   const answerQuestion = new AnswerQuestionUseCase({
-    create: async (answer: Answer) => {},
+    create: async () => {},
   })
 
   const answer = await answerQuestion.execute({
